@@ -26,7 +26,13 @@
 <div class="flex-container">
     <div style="flex-grow: 1">1</div>
     <div style="flex-grow: 1">2</div>
-    <div style="flex-grow: 8">3</div>
+    <div style="flex-grow: 8">
+        <ul id="navigation">
+            {% for user in users %}
+                <li><a href="{{ user.name }}">{{ user.email }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 
 </body>
