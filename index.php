@@ -20,8 +20,6 @@ $users = [
     ['name' => 'Chiara Cerrone', 'email' => 'chiara@cerrone.it'],
     ['name' => 'Lorenzo Leccese', 'email' => 'lorenzo@leccese.it'],
 ];
-
-
 //variabili template
 $vars = [
     'page_title' => 'Demo Twig - Stage Netsons',

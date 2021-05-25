@@ -1,39 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        .flex-container {
-            display: flex;
-            align-items: stretch;
-            background-color: #f1f1f1;
-        }
-
-        .flex-container > div {
-            background-color: DodgerBlue;
-            color: white;
-            margin: 10px;
-            text-align: center;
-            line-height: 75px;
-            font-size: 30px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link href="templates/style.css" rel="stylesheet">
 </head>
 <body>
 <h1>{{ page_title }}</h1>
-
-<p>Piccola demo sull'utilizzo di Twig:</p>
-
 <div class="flex-container">
-    <div style="flex-grow: 1">1</div>
-    <div style="flex-grow: 1">2</div>
-    <div style="flex-grow: 8">
-        <ul id="navigation">
-            {% for user in users %}
-                <li><a href="{{ user.name }}">{{ user.email }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
+<h2>Accedi alla tua To-Do list</h2>
+ <div class="access">
+   <input type="email" name="E-mail">
+   <input type="password" name="Password">
+ </div>
 </div>
-
 </body>
 </html>
